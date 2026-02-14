@@ -62,6 +62,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "BRACKETS";
+        };
     };
 
     behaviors {
@@ -80,10 +87,10 @@
 
         default_layer {
             bindings = <
-&mt LEFT_SHIFT TAB         &kp COMMA     &kp PERIOD       &kp MINUS        &kp F                                            &kp L      &kp R  &kp D  &kp Y  &kp P
-&lt 2 A                    &kp O         &kp E            &kp I            &kp U         &kp LS(LG(S))      &kp MINUS       &kp G      &kp N  &kp T  &kp S  &kp K
-&kp X                      &kp C         &kp V            &kp W            &kp Q         &kp Q              &kp SEMICOLON   &kp J      &kp H  &kp M  &kp B  &kp Z
-&mt LEFT_SHIFT LANGUAGE_1  &kp LEFT_ALT  &lt 1 PAGE_DOWN  &mt LCTRL SPACE  &kp LEFT_WIN  &lt 3 ESCAPE       &kp LEFT_SHIFT  &kp ENTER                       &lt 5 LANG2
+&mt LEFT_SHIFT TAB         &kp COMMA     &kp PERIOD       &kp MINUS        &kp F                                            &kp L      &kp R  &kp D    &kp Y  &kp P
+&lt 2 A                    &kp O         &kp E            &kp I            &kp U         &kp LS(LG(S))      &kp MINUS       &kp G      &kp N  &lt 5 T  &kp S  &kp K
+&kp X                      &kp C         &kp V            &kp W            &kp Q         &trans             &kp SEMICOLON   &kp J      &kp H  &kp M    &kp B  &kp Z
+&mt LEFT_SHIFT LANGUAGE_1  &kp LEFT_ALT  &lt 1 PAGE_DOWN  &mt LCTRL SPACE  &kp LEFT_WIN  &lt 3 ESCAPE       &kp LEFT_SHIFT  &kp ENTER                         &lt 5 LANG2
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -91,10 +98,10 @@
 
         ARROW {
             bindings = <
-&trans        &trans        &trans    &trans     &trans                              &kp LC(Z)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp BACKSPACE  &kp DELETE
-&kp LEFT_WIN  &kp LC(LEFT)  &kp LEFT  &kp RIGHT  &kp LC(RIGHT)  &trans      &kp F13  &kp LC(C)  &kp DOWN      &kp UP         &kp LC(V)      &kp LEFT_SHIFT
-&trans        &trans        &trans    &trans     &trans         &trans      &trans   &kp LC(X)  &kp HOME      &kp END        &kp PAGE_UP    &kp PAGE_DOWN
-&trans        &trans        &trans    &trans     &trans         &trans      &trans   &trans                                                 &trans
+&trans        &trans        &trans        &trans         &trans                             &kp LC(Z)  &kp PAGE_DOWN  &kp PAGE_UP  &kp BACKSPACE      &kp DELETE
+&kp LEFT_WIN  &kp LC(LEFT)  &kp LEFT      &kp RIGHT      &kp LC(RIGHT)  &trans      &trans  &kp LC(C)  &kp DOWN       &kp UP       &kp LC(V)          &kp LA(UP)
+&trans        &trans        &kp LS(LEFT)  &kp LS(RIGHT)  &trans         &trans      &trans  &kp LC(X)  &kp END        &kp HOME     &kp LC(BACKSPACE)  &kp LA(DOWN)
+&trans        &trans        &trans        &trans         &trans         &trans      &trans  &trans                                                    &trans
             >;
         };
 
