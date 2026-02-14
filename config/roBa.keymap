@@ -112,10 +112,10 @@
 
         default_layer {
             bindings = <
-&mt LEFT_SHIFT TAB  &kp COMMA     &kp PERIOD       &kp MINUS        &kp F                                                           &kp L      &kp R  &kp D    &kp Y  &kp P
-&lt 2 A             &kp O         &kp E            &kp I            &kp U             &kp LS(LG(S))      &kp MINUS                  &kp G      &kp N  &lt 5 T  &kp S  &kp K
-&kp X               &kp C         &kp V            &kp W            &kp Q             &trans             &kp SEMICOLON              &kp J      &kp H  &kp M    &kp B  &kp Z
-&kp LEFT_WIN        &kp LEFT_ALT  &lt 1 PAGE_DOWN  &mt LCTRL SPACE  &lt 6 LANGUAGE_1  &lt 3 ESCAPE       &mt LEFT_SHIFT LANGUAGE_2  &kp ENTER                         &lt 7 LANG2
+&mt LEFT_SHIFT TAB  &kp COMMA     &kp PERIOD       &kp MINUS        &kp F                                                             &kp L      &kp R  &kp D    &kp Y  &kp P
+&lt 2 A             &kp O         &kp E            &kp I            &kp U             &lt 7 LS(LG(S))      &kp MINUS                  &kp G      &kp N  &lt 5 T  &kp S  &kp K
+&kp X               &kp C         &kp V            &kp W            &kp Q             &trans               &kp SEMICOLON              &kp J      &kp H  &kp M    &kp B  &kp Z
+&kp LEFT_WIN        &kp LEFT_ALT  &lt 1 PAGE_DOWN  &mt LCTRL SPACE  &lt 6 LANGUAGE_1  &lt 3 ESCAPE         &mt LEFT_SHIFT LANGUAGE_2  &kp ENTER                         &lt 5 LANG2
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -170,10 +170,10 @@
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp AMPERSAND    &kp ASTERISK  &kp A      &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp DOLLAR       &kp PERCENT   &kp CARET  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
+&trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans                      &trans  &kp AMPERSAND    &kp ASTERISK  &kp QUESTION  &trans
+&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans      &trans  &trans  &kp DOLLAR       &kp PERCENT   &kp CARET     &kp PLUS
+&trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans  &trans      &trans  &trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &trans
+&trans  &trans                &trans                 &trans  &trans  &trans      &trans  &trans                                               &trans
             >;
         };
 
