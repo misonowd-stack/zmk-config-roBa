@@ -112,10 +112,10 @@
 
         default_layer {
             bindings = <
-&mt LEFT_SHIFT TAB  &kp COMMA     &kp PERIOD       &kp MINUS        &kp F                                                             &kp L      &kp R  &kp D    &kp Y  &kp P
-&lt 2 A             &kp O         &kp E            &kp I            &kp U             &lt 7 LS(LG(S))      &kp MINUS                  &kp G      &kp N  &lt 5 T  &kp S  &kp K
-&kp X               &kp C         &kp V            &kp W            &kp Q             &trans               &kp SEMICOLON              &kp J      &kp H  &kp M    &kp B  &kp Z
-&kp LEFT_WIN        &kp LEFT_ALT  &lt 1 PAGE_DOWN  &mt LCTRL SPACE  &lt 6 LANGUAGE_1  &lt 3 ESCAPE         &mt LEFT_SHIFT LANGUAGE_2  &kp ENTER                         &lt 5 LANG2
+&mt LEFT_SHIFT TAB  &kp COMMA     &kp PERIOD       &kp MINUS        &kp F                                                                      &kp L      &kp R  &kp D    &kp Y  &kp P
+&lt 2 A             &lt 6 O       &kp E            &kp I            &kp U                      &lt 7 LS(LG(S))      &kp MINUS                  &kp G      &kp N  &lt 5 T  &kp S  &kp K
+&kp X               &kp C         &kp V            &kp W            &kp Q                      &trans               &kp SEMICOLON              &kp J      &kp H  &kp M    &kp B  &kp Z
+&kp LEFT_WIN        &kp LEFT_ALT  &lt 1 PAGE_DOWN  &mt LCTRL SPACE  &mt LEFT_SHIFT LANGUAGE_1  &lt 3 ESCAPE         &mt LEFT_SHIFT LANGUAGE_2  &kp ENTER                         &lt 5 LANG2
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -132,10 +132,10 @@
 
         NUM {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9  &kp F12                      &kp SLASH      &kp N7        &kp N8        &kp N9        &kp MINUS
-&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &kp SEMICOLON  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL
-&trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans      &trans  &kp SQT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
-&trans  &trans  &trans  &trans  &trans   &trans      &trans  &kp N0                                                   &kp COMMA
+&trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                         &kp SLASH      &kp N7        &kp N8        &kp N9        &kp MINUS
+&trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &trans      &trans  &kp SEMICOLON  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL
+&trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE  &trans      &trans  &kp SQT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
+&trans  &trans  &trans                &trans                 &trans     &trans      &trans  &kp N0                                                   &kp COMMA
             >;
         };
 
@@ -161,19 +161,19 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans         &kp LC(T)         &trans            &kp LC(W)         &kp LA(F4)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(MINUS)  &kp LA(LEFT)      &kp LA(NUMBER_4)  &kp LA(RIGHT)     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                               &trans
+&trans  &kp F7  &kp F8  &kp F9  &kp F12                      &trans         &kp LC(T)         &trans            &kp LC(W)         &kp LA(F4)
+&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &kp LC(MINUS)  &kp LA(LEFT)      &kp LA(NUMBER_4)  &kp LA(RIGHT)     &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans      &trans  &trans         &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &trans
+&trans  &trans  &trans  &trans  &trans   &trans      &trans  &trans                                                               &trans
             >;
         };
 
         symbol {
             bindings = <
-&trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans                             &kp BACKSLASH  &kp AMPERSAND    &kp ASTERISK  &kp QUESTION  &trans
-&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON  &kp SEMICOLON  &trans      &trans  &kp QUESTION   &kp DOLLAR       &kp PERCENT   &kp CARET     &kp PLUS
-&trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE  &kp TILDE      &trans      &trans  &kp PIPE       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &trans
-&trans  &trans                &trans                 &trans     &trans         &trans      &trans  &trans                                                      &trans
+&trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                         &kp BACKSLASH  &kp AMPERSAND    &kp ASTERISK  &kp QUESTION  &kp PLUS
+&trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &trans      &trans  &kp QUESTION   &kp DOLLAR       &kp PERCENT   &kp CARET     &kp SEMICOLON
+&trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE  &trans      &trans  &kp PIPE       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp COLON
+&trans  &trans  &trans                &trans                 &trans     &trans      &trans  &trans                                                      &trans
             >;
         };
 
