@@ -141,10 +141,10 @@
 
         symbol {
             bindings = <
-&kp EXCLAMATION  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND                      &kp EXCLAMATION  &kp AT             &kp HASH          &kp DOLLAR         &kp PERCENT
-&kp SEMICOLON    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE      &trans      &trans  &kp GRAVE        &kp DOUBLE_QUOTES  &kp SQT           &kp COLON          &kp SEMI
-&kp CARET        &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE      &trans      &trans  &kp CARET        &kp LESS_THAN      &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp QUESTION
-&trans           &trans  &trans                &trans                 &trans         &trans      &trans  &trans                                                                   &trans
+&kp EXCLAMATION  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS                       &kp EXCLAMATION  &kp AT             &kp HASH          &kp DOLLAR         &kp PERCENT
+&kp SEMICOLON    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &trans      &trans  &kp GRAVE        &kp DOUBLE_QUOTES  &kp SQT           &kp COLON          &kp SEMI
+&kp CARET        &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE  &trans      &trans  &kp CARET        &kp LESS_THAN      &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp QUESTION
+&trans           &trans  &trans                &trans                 &trans     &trans      &trans  &trans                                                                   &trans
             >;
         };
 
